@@ -469,6 +469,7 @@ p{
 .footer-item h3{
     font-size: 22px;
     margin: 0 0 15px;
+    color: var(--main-color);
 }
 
 .footer-item p{
@@ -503,4 +504,40 @@ p{
     text-align: center;
     font-size: 10px;
     margin-top: 10px;
+}
+
+
+@media(max-width:991px){
+    .team-item{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+    .space_around{
+        justify-content: space-around;
+    }
+}
+@media(max-width:767px){
+    .home-text h1{
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .about-text, .about-img, .menu-item{
+        width: 100%;
+    }
+    .about-text{
+        margin-bottom: 20px;
+    }
+    .footer-item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer .copyright{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:575px){
+    .team-item{
+        width: 100%;
+    }
 }
