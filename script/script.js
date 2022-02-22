@@ -1,4 +1,6 @@
-/*Navbar close and open*/
+window.addEventListener("load", function(){
+    AOS.init();
+});
 
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click", toggleNav);
@@ -30,5 +32,6 @@ menuTabs.addEventListener("click", function(e){
         const menuSection = document.querySelector(".menu-section");
         menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
         menuSection.querySelector(target).classList.add("active");
+        AOS.init();
     }
 });
