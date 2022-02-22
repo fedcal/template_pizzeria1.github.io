@@ -1,4 +1,8 @@
 window.addEventListener("load", function(){
+    document.querySelector(".page-loader").classList.add("fade-out");
+    setTimeout(function(){
+        document.querySelector(".page-loader").style.display="none";
+    },6000);
     AOS.init();
 });
 
